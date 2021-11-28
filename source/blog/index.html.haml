@@ -18,5 +18,16 @@ title: The First Principles Blog
           %footer.more
             = link_to "Read More &raquo;", article
 
+%section.subscribe
+  %div.wrap
+    %aside.content-aside.subscribe
+      %h2 Never Miss a Post
+
+    %section.subscribe-form
+      %form.inline{action: "", method: "post"}
+        %input{type: "email", name: "email", required: true, placeholder: "enter your email"}
+        %button Subscribe
+
+
   - if paginate && next_page
     %p= link_to 'Next page', next_page

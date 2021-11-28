@@ -83,6 +83,7 @@ section.about,
 section.blog,
 section.communication,
 section.communication-gray,
+section.subscribe,
 section.structural {
   margin-top: $base-spacing;
   padding: $base-spacing;
@@ -140,9 +141,6 @@ section.structural {
 
   time {
     display: block;
-  }
-  ul {
-    // margin-bottom: $large-spacing;
   }
 }
 
