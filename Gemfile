@@ -6,7 +6,7 @@ gem 'middleman-blog', '~> 4.0.3'
 gem 'middleman-syntax', '~> 3.2.0'
 gem 'middleman-s3_sync', '4.0.3'
 gem 'builder', '~> 3.2.4'
-gem 'nokogiri', '1.10.9'
+gem 'nokogiri', '1.12.5'
 
 gem 'bourbon', '~> 4.2.2'
 gem 'bitters', '~> 1.0.0'
