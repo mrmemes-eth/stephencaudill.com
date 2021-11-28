@@ -40,7 +40,7 @@ This isn't just true for PowerPoint presentations in meetings. Simply put, narra
 
 ## Parting Thoughts
 
-Hanging my hopes on my own abilities feels wonderfully affirming. I'm only at the start of a long journey, but so much of what I've learned over the last few years has prepared me for it. The big ideas from my experiences are being distilled to their essence and I'm finding fertile ground for their application in new and often unexpected places. In its own [Strange Loop](https://en.wikipedia.org/wiki/Strange_loop), this process of ideation produces an output that I am compelled to then use as its input. Not content merely to be the architect, I become part of the machination and its consumer as well.
+Hanging my hopes on my own abilities feels wonderfully affirming. I'm only at the start of a long journey, but what I've learned since my last venture has prepared me for it. The big ideas from my experiences are being distilled to their essence and I'm finding fertile ground for their application in new and often unexpected places. In its own [Strange Loop](https://en.wikipedia.org/wiki/Strange_loop), this process of ideation produces an output that I am compelled to then use as its input. Not content merely to be the architect, I become part of the machination and its consumer as well.
 
 If any of what I've written here has struck a chord with you, please stick around and join me for this adventure. I could use the company.
 
