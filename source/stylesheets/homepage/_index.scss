@@ -9,6 +9,9 @@
 .about {
   .content-aside h2 {
     padding-top: 0.615em;
+    @include media($medium-screen-up) {
+      padding-top: 0;
+    }
   }
 }
 
@@ -81,7 +84,8 @@ section.blog,
 section.communication,
 section.communication-gray,
 section.structural {
-  padding: $small-spacing auto;
+  margin-top: $base-spacing;
+  padding: $base-spacing;
 
   .content-aside {
     display: none;
@@ -98,7 +102,7 @@ section.structural {
 }
 
 .communication-gray {
-  background-color: $transparent-black;
+  background-color: $transparent-gray;
 
   a {
     color: white;
@@ -153,10 +157,10 @@ section.structural {
 .articles,
 .categories,
 .email {
-  margin-bottom: $base-spacing;
+  margin: $base-spacing auto;
 
   @include media($medium-screen-up) {
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
