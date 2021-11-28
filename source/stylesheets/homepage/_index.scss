@@ -7,37 +7,38 @@
 }
 
 .about {
-  padding-bottom: 3.125em;
-  padding-top: 3.125em;
-
-  @include media($medium-screen-up) {
-    padding-bottom: 6.25em;
-    padding-top: 6.25em;
-  }
   .content-aside h2 {
-    padding-top: 0.6125em;
+    padding-top: 0.615em;
   }
 }
 
-.content-aside {
-  @include fill-parent;
-  margin-bottom: $base-spacing;
-  text-align: center;
+.wrap {
+  .content-aside {
+    @include fill-parent;
+    margin-bottom: $base-spacing;
+    text-align: center;
 
-  @include media($medium-screen-up) {
-    @include span-columns(2 of 8);
-    margin-bottom: 0;
-  }
+    @include media($medium-screen-up) {
+      @include span-columns(2 of 8);
+      margin-bottom: 0;
+    }
 
-  @include media($large-screen-up) {
-    @include span-columns(3 of 12);
-    @include shift(1);
-  }
+    @include media($large-screen-up) {
+      @include span-columns(3 of 12);
+      @include shift(1);
+    }
 
-  h2 {
-    color: $transparent-black;
-    font-size: 0.875em;
-    text-transform: uppercase;
+    h2 {
+      padding-right: $large-spacing;
+      color: $transparent-black;
+      font-size: 0.875em;
+      text-transform: uppercase;
+      text-align: right;
+    }
+
+    &.welcome h2 {
+      line-height: 2.5em;
+    }
   }
 }
 
@@ -77,14 +78,10 @@
 
 .the-goods,
 .communication,
-.communication-gray {
-  padding-bottom: 3.125em;
-  padding-top: 3.125em;
-
-  @include media($medium-screen-up) {
-    padding-bottom: 6.25em;
-    padding-top: 6.25em;
-  }
+.communication-gray,
+.structural {
+  padding-top: 2em;
+  padding-bottom: 1.125em;
 
   .content-aside {
     display: none;
@@ -93,6 +90,7 @@
       display: inline-block;
     }
   }
+  clear: both;
 }
 
 .the-goods {
@@ -114,7 +112,8 @@
 .proficiencies,
 .open-source,
 .email,
-.elsewhere {
+.elsewhere,
+.subsection {
   text-align: center;
 
   @include media($medium-screen-up) {

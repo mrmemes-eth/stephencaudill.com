@@ -36,7 +36,7 @@
   text-transform: uppercase;
 
   @include media($medium-screen-up) {
-    @include span-columns(6);
+    @include span-columns(5);
     font-size: 2.25em;
     text-align: left;
   }
@@ -44,7 +44,7 @@
 
 .lambda {
   @include size(42px 44px);
-  background: url('../images/lambda.svg');
+  background: url("../images/lambda.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   display: inline-block;
@@ -60,7 +60,7 @@
   text-transform: uppercase;
 
   @include media($medium-screen-up) {
-    @include span-columns(2);
+    @include span-columns(3);
     text-align: right;
   }
 
@@ -76,5 +76,20 @@
     &:hover {
       color: $black;
     }
+  }
+}
+
+div.wrap {
+  h1 {
+    font-size: 1.75em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+  h4 {
+    font-size: 1.125em;
   }
 }

@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: The First Principles Blog
 ---
 
 %section.blog
@@ -8,10 +8,11 @@ title: Blog
     - if prev_page
       %p= link_to 'Previous page', prev_page
   %div.wrap
+    %h1.title The First Principles Blog
     - page_articles.each do |article|
       %article.post
         %aside.post-aside
-          %h2= article.date.strftime('%B %e, %Y')
+          %h2.date= article.date.strftime('%B %e, %Y')
 
         %section.post-content
           %h3.title= link_to article.title, article

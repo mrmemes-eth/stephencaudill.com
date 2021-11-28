@@ -3,10 +3,20 @@ section.blog {
 
   @include media($medium-screen-up) {
     margin-bottom: 6.25em;
+    @include fill-parent;
+
+    @include media($medium-screen-up) {
+      @include span-columns(8 of 8);
+      @include omega;
+    }
+
+    @include media($large-screen-up) {
+      @include span-columns(12 of 12);
+    }
   }
   .post {
     ul,
-    ol{
+    ol {
       margin: 1em;
       font-size: 1.125em;
     }
@@ -17,6 +27,17 @@ section.blog {
       list-style-type: decimal;
     }
   }
+
+  h1.title {
+    color: $dark-gray;
+    font-size: 2em;
+  }
+}
+
+.post-aside {
+  h2.date {
+    color: $medium-gray;
+  }
 }
 
 .post {
@@ -25,52 +46,28 @@ section.blog {
   margin-bottom: $base-spacing * 2;
 }
 
-.post-aside {
-  @include fill-parent;
-  margin-bottom: $base-spacing;
-  text-align: center;
+.post-content {
+  .title {
+    color: $blue;
+    font-family: $base-font-family;
+    font-size: 1.75em;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
 
-  @include media($medium-screen-up) {
-    @include span-columns(2 of 8);
-    margin-bottom: 0;
-    padding-top: .75em;
+    @include media($medium-screen-up) {
+      text-align: left;
+    }
   }
 
-  @include media($large-screen-up) {
-    @include span-columns(3 of 12);
-    @include shift(1);
+  .content {
+    margin: auto $tiny-spacing $tiny-spacing;
   }
-
-  h2 {
-    color: $transparent-black;
+  h4.date {
+    color: $transparent-gray;
     font-size: 0.875em;
     text-transform: uppercase;
-  }
-}
-
-.post-content {
-  @include fill-parent;
-
-  @include media($medium-screen-up) {
-    @include span-columns(6 of 8);
-    @include omega;
-  }
-
-  @include media($large-screen-up) {
-    @include span-columns(8 of 12);
-  }
-}
-
-.title {
-  color: $blue;
-  font-family: $base-font-family;
-  font-size: 1.5em;
-  font-weight: normal;
-  line-height: 1.5em;
-  text-align: center;
-
-  @include media($medium-screen-up) {
-    text-align: left;
+    margin: auto auto $small-spacing;
   }
 }
 
@@ -85,9 +82,35 @@ section.blog {
   }
 }
 
+figure {
+  margin: auto auto $base-spacing;
+  img {
+    margin-bottom: 0;
+  }
+  figcaption {
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+blockquote {
+  border-left: 2px solid $transparent-gray;
+  padding-left: $small-spacing;
+}
+
 .content {
+  margin: $base-spacing 0;
   img {
     margin-bottom: $base-spacing;
+  }
+
+  @include media($medium-screen-up) {
+    max-width: em(600);
+  }
+
+  @include media($large-screen-up) {
+    max-width: em(800);
   }
 }
 

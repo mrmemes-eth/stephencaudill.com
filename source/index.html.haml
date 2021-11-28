@@ -2,56 +2,49 @@
   %div.wrap
     %img{src: "images/caudill-stephen-wide.png"}
 
-%section.about
+%section.structural
   %div.wrap
-    %aside.content-aside
-      %h2 About Stephen
+    %aside.content-aside.welcome
+      %h2 Welcome
 
     %section.about-content
-      %h3 Engineering leader focused on delivering efficient solutions
-      %div.about-content-columns
-        %p
-          As a young man in Florida, Stephen came to programming via digital
-          music production. In order to tackle a problem he and his friends
-          were having sharing the large music files, he turned to Perl and
-          cobbled together an upload script that posted files to his home
-          server circa 1998. He immediately started thinking about other ways
-          he might be able to make his digital life easier, voraciously
-          consuming everything he could read on the topic of programming. It
-          rapidly became apparent that, not only did he enjoy writing these
-          scripts, but he was actually pretty good at it.
-        %p
-          Flash forward a couple of decades and Stephen has been steeped in
-          virtually every aspect of tech. He has spent time in enterprises,
-          startups and consultancies. From each sector he's gained further
-          insight into the honing of his own craft. We find in him an
-          experienced leader who delights in crafting human solutions when
-          possible and technical solutions when necessary. In technical
-          solutions, he wields a functional approach, evolving code-bases from
-          MVPs and letting the shape of the data determine its storage.
+      %h3 Hi, I'm Stephen Caudill
+      %p
+        I've been building the web since the first dot com rally. I am a
+        programming language polyglot with a special fondness for
+        = succeed '.' do
+          %a{href: "https://en.wikipedia.org/wiki/Functional_programming"}<
+            functional approaches
+        I love working on
+        = succeed ',' do
+          %a{href: "https://www.jimcollins.com/article_topics/articles/BHAG.html"}<
+            Big Hairy Audacious Goals
+        am an avid
+        = succeed ',' do
+          %a{href: "https://en.wikipedia.org/wiki/Servant_leadership"}<
+            Servant Leader
+        and think that what you don't build might be more important than what
+        you do. Have a look around and please do
+        %a{href: "mailto:hello@stephencaudill.com"} reach out
+        and say hi.
 
-%section.the-goods
+%section.structural
   %div.wrap
     %aside.content-aside
-      %h2 The Goods
+      %h2 From the Blog
 
-    %section.proficiencies
-      %h3 Proficiencies
+    %section.subsection
+      %h3 Recent Articles
       %ul
-        %li Clojure
-        %li Ruby
-        %li API Design
-        %li System Architecture
-        %li Agile Methodologies
+        - blog.articles[0...3].each do |article|
+          %li
+            %a{href: article.url}= article.title
+            %time= article.date.strftime('%B %e, %Y')
 
-    %section.open-source
-      %h3 Open Source Contributions
+    %section.subsection
+      %h3 Recent Categories
       %ul
-        %li
-          %a{href: "https://github.com/hashrocket/decent_exposure"}Decent Exposure
-        %li
-          %a{href: "https://github.com/voxdolo/tomatoist"}Tomatoist (a Pomodoro timer)
-        %li
-          %a{href: "https://github.com/voxdolo/funcussion"}Funcussion
-        %li
-          %a{href: "https://github.com/voxdolo/lein-buster"}lein-buster
+        - blog.tags.sort_by{|tag,articles| articles.sort_by(&:date).last.date }[0...3].each do |tag, _|
+          %li
+            %a{href: tag_path(tag)}= tag
+

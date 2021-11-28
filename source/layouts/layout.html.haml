@@ -31,13 +31,15 @@
         %nav.main-nav
           %ul
             %li
+              %a{href: "/"} Home
+            %li
               %a{href: "/blog"} Blog
             %li
-              %a{href: "mailto:hello@stephencaudill.com"} Email
+              %a{href: "/about.html"} About
 
     = yield
 
-%section{class: page_classes.include?('blog') ? 'communication-gray' : 'communication'}
+%section{class: page_classes.include?('index') ? 'communication' : 'communication-gray'}
   %div.wrap
     %aside.content-aside
       %h2 Communication
@@ -53,5 +55,3 @@
           %a{href: "https://www.github.com/voxdolo"}Github
         %li
           %a{href: "https://www.linkedin.com/in/stephen-caudill"}Linkedin
-        %li
-          %a{href: "https://keybase.io/voxdolo"}Keybase

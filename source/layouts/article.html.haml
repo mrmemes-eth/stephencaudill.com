@@ -2,10 +2,12 @@
   %section.blog
     %div.wrap
       %article.post
-        %aside.post-aside
-          %h2= current_article.date.strftime('%B %e, %Y')
-
         %section.post-content
           %h3.title= link_to current_article.title, current_article
+          %h4.date= current_article.date.strftime('%B %e, %Y')
+          - if current_page.data.banner
+            %figure
+              %img{:src => current_page.data.banner.img }
+              %figcaption= current_page.data.banner.cap
           %div.content= current_article.body
           %footer.comments
