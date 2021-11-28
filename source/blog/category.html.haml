@@ -1,0 +1,17 @@
+---
+title: Blog Category
+---
+
+%section.blog
+  %div.wrap
+    %article.post
+      %aside.post-aside
+        %h2 Posts about: #{h tagname}
+
+    - page_articles.each do |article|
+      %section.post-content
+        %ul
+          - page_articles.each do |article|
+            %li
+              %a{:href => article.title }= article.title
+              %time= article.date.strftime('%b %e')

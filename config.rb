@@ -11,8 +11,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
 end
 
 Time.zone = "Mountain Time (US & Canada)"
@@ -27,6 +25,8 @@ activate :blog do |blog|
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = "page/{num}"
+  blog.taglink = "categories/{tag}.html"
+  blog.tag_template = "blog/category.html"
 end
 page "/blog/feed.xml", layout: false
 
