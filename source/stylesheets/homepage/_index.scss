@@ -76,12 +76,12 @@
   }
 }
 
-.the-goods,
-.communication,
-.communication-gray,
-.structural {
-  padding-top: 2em;
-  padding-bottom: 1.125em;
+section.about,
+section.blog,
+section.communication,
+section.communication-gray,
+section.structural {
+  padding: $small-spacing auto;
 
   .content-aside {
     display: none;
@@ -119,6 +119,9 @@
   @include media($medium-screen-up) {
     @include span-columns(3 of 8);
     text-align: left;
+    time {
+      display: inline-block;
+    }
   }
 
   @include media($large-screen-up) {
@@ -130,6 +133,13 @@
     font-size: 0.875em;
     text-transform: uppercase;
   }
+
+  time {
+    display: block;
+  }
+  ul {
+    // margin-bottom: $large-spacing;
+  }
 }
 
 .open-source a {
@@ -140,6 +150,8 @@
 }
 
 .proficiencies,
+.articles,
+.categories,
 .email {
   margin-bottom: $base-spacing;
 

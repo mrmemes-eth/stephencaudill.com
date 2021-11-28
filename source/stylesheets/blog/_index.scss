@@ -43,21 +43,15 @@ section.blog {
 .post {
   @include clearfix;
   @include fill-parent;
-  margin-bottom: $base-spacing * 2;
 }
 
 .post-content {
   .title {
     color: $blue;
     font-family: $base-font-family;
-    font-size: 1.75em;
+    font-size: 1.5em;
     font-weight: normal;
-    text-align: center;
     margin: auto;
-
-    @include media($medium-screen-up) {
-      text-align: left;
-    }
   }
 
   .content {

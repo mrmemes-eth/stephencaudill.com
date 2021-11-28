@@ -8,14 +8,12 @@ title: The First Principles Blog
     - if prev_page
       %p= link_to 'Previous page', prev_page
   %div.wrap
-    %h1.title The First Principles Blog
+    %h2.title Articles
     - page_articles.each do |article|
       %article.post
-        %aside.post-aside
-          %h2.date= article.date.strftime('%B %e, %Y')
-
         %section.post-content
           %h3.title= link_to article.title, article
+          %h4.date= article.date.strftime('%B %e, %Y')
           %div.content= article.data.excerpt
           %footer.more
             = link_to "Read More &raquo;", article
