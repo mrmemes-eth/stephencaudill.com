@@ -13,5 +13,5 @@ title: Blog Category
         %ul
           - page_articles.each do |article|
             %li
-              %a{:href => article.title }= article.title
+              = link_to article.title, article
               %time= article.date.strftime('%b %e')
