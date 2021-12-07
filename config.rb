@@ -4,7 +4,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :markdown_engine, :kramdown
 
-activate :livereload
+activate :livereload, host: '0.0.0.0', port: '1234'
 
 # Build-specific configuration
 configure :build do

@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    command: bundle exec middleman server
+    volumes:
+      - ".:/usr/src/app"
+      - "node_modules:/usr/src/app/node_modules"
+    ports:
+      - "4567:4567"
+      - "1234:1234"
+volumes:
+  node_modules:
