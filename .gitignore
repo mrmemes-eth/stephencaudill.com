@@ -1,6 +1,9 @@
 # Ignore the build directory
 /build
 
+# Ignore VSCode files
+/.vscode
+
 # Ignore cache
 /.sass-cache
 /.cache

@@ -2,18 +2,20 @@
 title: A Dream of What Might Have Been
 date: 2021-12-07 11:11 MST
 tags: Web2
-excerpt: It's important to me to frame my thinking about where technology is heading by reflecting on my personal experience of where it's come from. What's past is prologue.
+excerpt: It's important to me to frame my thinking about where technology is heading by reflecting on my personal experience of where it's come from. What's past is so often prologue.
 banner:
   img: /images/cathedral-of-the-mind.png
   alt: Looking up at the ceiling of a grand old cathedral.
   cap: image courtesy of <a href="https://www.pexels.com/@lewis-ashton-117694088">Lewis Ashton</a>, CC0
 ---
 
-## Hope Springs Eternal
+In 1996, John Barlow of the Electronic Frontier Foundation wrote [A Declaration of the Independence of Cyberspace](https://www.eff.org/cyberspace-independence). It's a great read, but too long to quote in full here. Luckily, the opening salvo surmises the thesis well:
 
-Things were already well underway when I first started building for the web, but I managed to get in before the first dot-com bubble. I was young and idealistic, and my mind was constantly reeling with the possibilities that the web gave us. Impoverished countries with poor educational systems would now have equal access to information. A better understanding of our fellow humans would reduce tensions and improve global relations. The information wanted to be free and I wanted to help it.
+> Governments of the Industrial World, you weary giants of flesh and steel, I come from Cyberspace, the new home of Mind. On behalf of the future, I ask you of the past to leave us alone. You are not welcome among us. You have no sovereignty where we gather.
 
-Unbeknownst to me, as I dug in and began to build in earnest, there was change just around the bend. Without belaboring the history, the bubble burst and our unbridled building was reined in. There was a period of contraction, followed by one of realignment. The check had come due and the web had to pay its own way.
+This was the general spirit that colored my initial perspective of the web. I loved the revolutionary spirit and was instantly taken by what it promised. As a young idealist, my mind was constantly reeling with the possibilities that the web gave us. Impoverished countries with poor educational systems would now have equal access to information. A better understanding of our fellow humans would reduce tensions and improve global relations. The information wanted to be free and I wanted to help it.
+
+Unbeknownst to me, as I dug in and began to build in earnest, there was change just around the bend. The dot-com bubble was set to burst, and our unbridled building would be reined in. There was a period of contraction, followed by one of realignment. The check had come due, and the web would have to pay its own way.
 
 ## A Dawning Understanding
 
@@ -52,6 +54,6 @@ Langston Hughes, asks us in his poem [_Harlem_](https://www.poetryfoundation.org
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;_Or does it explode?_
 
-Mr. Hughes wrote that some years after the [Harlem Rennaisance](https://en.wikipedia.org/wiki/Harlem_Renaissance), in the midst of the climate of Jim Crow America. While I can only imagine the frustration that this work was born out of, it does what great art does, and effectively conveys a feeling that resonates. To me, this speaks to the dream of a better future that we seem to have lost along the way to bringing it about.
+Mr. Hughes wrote that some years after the [Harlem Renaissance](https://en.wikipedia.org/wiki/Harlem_Renaissance), in the midst of an America embattled by Jim Crow laws. While I can only imagine the frustration that this work was born out of, it does what great art does, and effectively conveys a feeling that resonates. To me, this speaks to the dream of a better future that we seem to have lost along the way to bringing it about.
 
-This sounds like a personal story of disappointment and loss, and it is. Fortunately, this is not the end of the story, but rather the setting for a more hopeful one. As always, more change is just around the corner.
+If this sounds like a personal story of disappointment and loss, that's because it is. Fortunately, this is not the end of the story, but a setting for a more hopeful one. And as always, [more change is just around the corner](/blog/2022/in-defense-of-jpegs.html).
