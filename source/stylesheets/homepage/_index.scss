@@ -1,7 +1,6 @@
 .banner {
   img {
     display: inline-block;
-    float: left;
     max-width: 100%;
   }
 }
@@ -143,9 +142,6 @@ section.communication {
 
   time {
     display: block;
-  }
-  ul {
-    // margin-bottom: $large-spacing;
   }
 }
 
