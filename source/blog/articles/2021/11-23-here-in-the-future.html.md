@@ -2,7 +2,7 @@
 title: Here in the Future
 date: 2021-11-23 11:12 MST
 tags: writing, entrepeneurship
-excerpt: As our understanding of our product, customer, or environment improves, so must the software systems that support them be able to change to reflect that understanding. Change is inherent in any functioning system.
+excerpt: Change is all around us at all times, and how effectively we adjust to it is at least one measure of our own health and well-being. Things are changing for me as well, and this post finds me pondering these changes and the nature of change itself.
 banner:
   img: /images/here-in-the-future-banner.png
   alt: Man standing on stainless steel filamend
