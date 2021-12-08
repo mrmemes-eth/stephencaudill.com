@@ -94,8 +94,7 @@ section.structural {
 
 section.about,
 section.blog,
-section.communication,
-section.communication-gray {
+section.communication {
   @include media($medium-screen-up) {
     margin-top: auto;
     padding-top: 0;
