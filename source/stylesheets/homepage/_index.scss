@@ -6,13 +6,8 @@
   }
 }
 
-.about {
-  .content-aside h2 {
-    padding-top: 0.615em;
-    @include media($medium-screen-up) {
-      padding-top: 0;
-    }
-  }
+.about .content-aside h2 {
+  padding-top: 0.615em;
 }
 
 .wrap {
@@ -86,6 +81,7 @@ section.communication-gray,
 section.structural {
   margin-top: $base-spacing;
   padding: $base-spacing;
+  clear: both;
 
   .content-aside {
     display: none;
@@ -94,9 +90,17 @@ section.structural {
       display: inline-block;
     }
   }
-  clear: both;
 }
 
+section.about,
+section.blog,
+section.communication,
+section.communication-gray {
+  @include media($medium-screen-up) {
+    margin-top: auto;
+    padding-top: 0;
+  }
+}
 .the-goods {
   background-color: $green;
 }
