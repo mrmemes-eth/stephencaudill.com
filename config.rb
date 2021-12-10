@@ -10,7 +10,7 @@ activate :livereload, host: '0.0.0.0', port: '1234'
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :asset_hash
+  activate :asset_hash, ignore: [/^android-chrome/, /^favicon/, /^mstile/,/^safari-pinned/]
 end
 
 Time.zone = "Mountain Time (US & Canada)"
