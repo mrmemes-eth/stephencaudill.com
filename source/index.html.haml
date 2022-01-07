@@ -44,7 +44,6 @@
     %section.subsection.categories
       %h3 Recent Categories
       %ul
-        - blog.tags.sort_by{|tag,articles| articles.sort_by(&:date).last.date }[0...3].each do |tag, _|
-          %li
-            %a{href: tag_path(tag)}= tag
+        - blog.articles[0...3].map{|article| article.tags }.flatten.uniq.sort.each do |tag|
+          %li= link_to tag, tag_path(tag)
 
