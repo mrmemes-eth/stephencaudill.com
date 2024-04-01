@@ -1,3 +1,5 @@
+.env
+
 # Ignore the build directory
 /build
 
